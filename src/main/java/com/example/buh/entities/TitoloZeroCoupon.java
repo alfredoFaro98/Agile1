@@ -1,11 +1,9 @@
 package com.example.buh.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
-import javax.persistence.Table;
+import javax.persistence.*;
 
-@Entity(name="TitoloZeroCoupon")
-@Inheritance(strategy= InheritanceType.SINGLE_TABLE)
-public class TitoloZeroCoupon extends Titolo{
+@Entity
+@DiscriminatorValue("TZC")
+public class TitoloZeroCoupon extends Titolo
+{
 }
