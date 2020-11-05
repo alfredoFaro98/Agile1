@@ -39,6 +39,83 @@ public class Titolo {
     @OneToMany(mappedBy = "titolo")
     private List<SaldoPerTitolo> saldi;
 
+    /*metodi*/
 
+    public Long getCodiceISIN() {
+        return codiceISIN;
+    }
 
+    public void setCodiceISIN(Long codiceISIN) {
+        this.codiceISIN = codiceISIN;
+    }
+
+    public String getDescrizione() {
+        return descrizione;
+    }
+
+    public void setDescrizione(String descrizione) {
+        this.descrizione = descrizione;
+    }
+
+    public String getEmittente() {
+        return emittente;
+    }
+
+    public void setEmittente(String emittente) {
+        this.emittente = emittente;
+    }
+
+    public LocalDate getScadenza() {
+        return scadenza;
+    }
+
+    public void setScadenza(LocalDate scadenza) {
+        this.scadenza = scadenza;
+    }
+
+    public String getValoreNominale() {
+        return valoreNominale;
+    }
+
+    public void setValoreNominale(String valoreNominale) {
+        this.valoreNominale = valoreNominale;
+    }
+
+    public String getTasso() {
+        return tasso;
+    }
+
+    public void setTasso(String tasso) {
+        this.tasso = tasso;
+    }
+
+    public List<Cedola> getCedole() {
+        return cedole;
+    }
+
+    public void setCedole(List<Cedola> cedole) {
+        this.cedole = cedole;
+    }
+
+    public List<Movimento> getMovimenti() {
+        return movimenti;
+    }
+
+    public void setMovimenti(List<Movimento> movimenti) {
+        this.movimenti = movimenti;
+    }
+
+    public List<SaldoPerTitolo> getSaldi() {
+        return saldi;
+    }
+
+    public void setSaldi(List<SaldoPerTitolo> saldi) {
+        this.saldi = saldi;
+    }
+
+    /*metodo to string di prova per vedere se funziona la select*/
+    @Override
+    public String toString() {
+        return this.descrizione + " " + this.emittente;
+    }
 }

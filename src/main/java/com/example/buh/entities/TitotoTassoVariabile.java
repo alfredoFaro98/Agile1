@@ -16,4 +16,7 @@ public class TitotoTassoVariabile extends Titolo{
         return spread;
     }
 
+    public void setSpread(Long spread) {
+        this.spread = spread;
+    }
 }

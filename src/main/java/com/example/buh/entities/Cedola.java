@@ -23,6 +23,38 @@ public class Cedola {
     @Column(name = "Valore")
     protected Long valore;
 
+    public CedolaId getCedolaId() {
+        return cedolaId;
+    }
+
+    public void setCedolaId(CedolaId cedolaId) {
+        this.cedolaId = cedolaId;
+    }
+
+    public Titolo getTitolo() {
+        return titolo;
+    }
+
+    public void setTitolo(Titolo titolo) {
+        this.titolo = titolo;
+    }
+
+    public LocalDate getScadenza() {
+        return scadenza;
+    }
+
+    public void setScadenza(LocalDate scadenza) {
+        this.scadenza = scadenza;
+    }
+
+    public Long getValore() {
+        return valore;
+    }
+
+    public void setValore(Long valore) {
+        this.valore = valore;
+    }
+
 
 
 }

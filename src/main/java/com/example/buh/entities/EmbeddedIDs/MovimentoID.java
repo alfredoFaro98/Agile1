@@ -17,4 +17,27 @@ public class MovimentoID implements Serializable {
     @Column(name = "progressivo")
     private Long progressivo;
 
+    public Long getNumeroConto() {
+        return numeroConto;
+    }
+
+    public void setNumeroConto(Long numeroConto) {
+        this.numeroConto = numeroConto;
+    }
+
+    public LocalDate getLocalDate() {
+        return localDate;
+    }
+
+    public void setLocalDate(LocalDate localDate) {
+        this.localDate = localDate;
+    }
+
+    public Long getProgressivo() {
+        return progressivo;
+    }
+
+    public void setProgressivo(Long progressivo) {
+        this.progressivo = progressivo;
+    }
 }

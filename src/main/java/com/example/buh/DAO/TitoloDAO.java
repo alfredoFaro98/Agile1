@@ -5,5 +5,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface TitoloDAO extends JpaRepository<Titolo,Long> {
+public interface TitoloDAO extends JpaRepository<Titolo,Long>
+{
+    /*ora qua mi devo andare a creare le repo */
 }

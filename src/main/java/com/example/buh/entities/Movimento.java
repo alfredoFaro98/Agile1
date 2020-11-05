@@ -32,5 +32,43 @@ public class Movimento {
     @Column(name = "Quantita")
     protected Long quantita;
 
+    public MovimentoID getMovimentoID() {
+        return movimentoID;
+    }
 
+    public void setMovimentoID(MovimentoID movimentoID) {
+        this.movimentoID = movimentoID;
+    }
+
+    public Titolo getTitolo() {
+        return titolo;
+    }
+
+    public void setTitolo(Titolo titolo) {
+        this.titolo = titolo;
+    }
+
+    public ContoTitoli getContoTitoli() {
+        return contoTitoli;
+    }
+
+    public void setContoTitoli(ContoTitoli contoTitoli) {
+        this.contoTitoli = contoTitoli;
+    }
+
+    public TipoMovimento getTipoMovimento() {
+        return tipoMovimento;
+    }
+
+    public void setTipoMovimento(TipoMovimento tipoMovimento) {
+        this.tipoMovimento = tipoMovimento;
+    }
+
+    public Long getQuantita() {
+        return quantita;
+    }
+
+    public void setQuantita(Long quantita) {
+        this.quantita = quantita;
+    }
 }

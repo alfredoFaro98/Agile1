@@ -24,6 +24,35 @@ public class ContoTitoli {
     @OneToMany(mappedBy = "contoTitoli")
     private List<SaldoPerTitolo> saldi;
 
+    public Long getNumeroConto() {
+        return numeroConto;
+    }
 
+    public void setNumeroConto(Long numeroConto) {
+        this.numeroConto = numeroConto;
+    }
 
+    public TipoConto getTipoConto() {
+        return tipoConto;
+    }
+
+    public void setTipoConto(TipoConto tipoConto) {
+        this.tipoConto = tipoConto;
+    }
+
+    public List<Movimento> getMovimenti() {
+        return movimenti;
+    }
+
+    public void setMovimenti(List<Movimento> movimenti) {
+        this.movimenti = movimenti;
+    }
+
+    public List<SaldoPerTitolo> getSaldi() {
+        return saldi;
+    }
+
+    public void setSaldi(List<SaldoPerTitolo> saldi) {
+        this.saldi = saldi;
+    }
 }

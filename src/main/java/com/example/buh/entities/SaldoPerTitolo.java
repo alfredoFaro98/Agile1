@@ -23,4 +23,36 @@ public class SaldoPerTitolo {
 
     @Column(name = "Quantita")
     private Long quantita;
+
+    public SaldoPerTitoloID getSaldoPerTitoloID() {
+        return saldoPerTitoloID;
+    }
+
+    public void setSaldoPerTitoloID(SaldoPerTitoloID saldoPerTitoloID) {
+        this.saldoPerTitoloID = saldoPerTitoloID;
+    }
+
+    public Titolo getTitolo() {
+        return titolo;
+    }
+
+    public void setTitolo(Titolo titolo) {
+        this.titolo = titolo;
+    }
+
+    public ContoTitoli getContoTitoli() {
+        return contoTitoli;
+    }
+
+    public void setContoTitoli(ContoTitoli contoTitoli) {
+        this.contoTitoli = contoTitoli;
+    }
+
+    public Long getQuantita() {
+        return quantita;
+    }
+
+    public void setQuantita(Long quantita) {
+        this.quantita = quantita;
+    }
 }
