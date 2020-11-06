@@ -11,8 +11,13 @@ import java.util.List;
 @Repository
 public interface TitoloDAO extends JpaRepository<Titolo,Long>
 {
+    /*nei DAO sono presenti quindi sia le query con annotation che senza */
+    /*esempio funzionante*/
     List<Titolo> findAllByDescrizione(String descrizione);
 
+    @Query("select t from Titolo t where t.descrizione=: ciccio ")
+    List<Titolo>getTitoloByDescription(@Param("ciccio") String a);
+
     @Query("select t.codiceISIN from Titolo t where t.descrizione=: ciccio ")
-    List<String>getTitoloWithDescription(@Param("ciccio") String a);
+    List<String>getCodiceISINByDescription(@Param("ciccio") String a);
 }
